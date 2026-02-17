@@ -1,3 +1,5 @@
 venv
 notebook/.ipynb_checkpoints
 notebook/train.csv
+backend/__pycache__/
+frontend/node_modules
