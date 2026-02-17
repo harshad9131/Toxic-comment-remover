@@ -384,7 +384,7 @@ const LABEL_CONFIG = {
 function getOverallVerdict(predictions) {
   if (!predictions) return null;
 
-  const ANY_TOXIC_THRESHOLD = 0.5;
+  const ANY_TOXIC_THRESHOLD = 0.7;
   const triggered = Object.entries(predictions).filter(
     ([key, prob]) => key !== "non_toxic" && prob >= ANY_TOXIC_THRESHOLD
   );
@@ -469,7 +469,7 @@ export default function App() {
 
           <h1>Toxicity Detector</h1>
           <p className="header-desc">
-            Paste any YouTube comment below to instantly analyse its tone and safety.
+            Paste any comment below to instantly analyse its tone and safety.
           </p>
 
           <div className="divider" />
